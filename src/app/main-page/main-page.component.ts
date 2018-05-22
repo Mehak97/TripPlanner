@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ViewChild } from '@angular/core';
+import  {LocationInfo} from '../locationinfo.service';
+import {Router} from '@angular/router';
 /// { ModalDirective } from 'your-path-to/typescripts/free';
 @Component({
   selector: 'app-main-page',
@@ -8,10 +10,18 @@ import { ViewChild } from '@angular/core';
 })
 export class MainPageComponent implements OnInit {
 
-  constructor() { }
+  //constructor(private router:Router) { }
 
+  constructor(){}
   ngOnInit() {
   }
 
+  /*onSelect(place)
+  {
+    console.log("shukr hai ");
+    this.router.navigate(['/home',place.id]);
+      // call of placese component
+  }*/
   } 
+  
               

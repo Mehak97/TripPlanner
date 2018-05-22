@@ -1,0 +1,28 @@
+[
+    {
+        "id": "Paris",
+        "locaion_name": "Paris"
+        /*"favourite-spot":[
+            {
+                "id":1,"spot-name":"Montmatre","description":"sunset view",
+                "id":2,"spot-name":"The Louvre","description":"Museum ",
+                "id":3,"spot-name":"Notre Dame","description":"Cathedreal"
+            }
+        ]
+    },
+
+    {
+        "id":"Greece","locaion_name":"Greece","favourite-spot":[
+            {
+                "id":1,"spot-name":"Halkidiki","description":"a trident-like peninsula, sporting excellent beaches.",
+                "id":2,"spot-name":"Delphi","description":"Greece’s most popular archaeological site.",
+                "id":3,"spot-name":"Crete","description":" land of pleasing contrasts"
+            }
+        ]
+    }*/
+    },
+    {
+        "id": "London",
+        "location_name": "London"
+    }
+]

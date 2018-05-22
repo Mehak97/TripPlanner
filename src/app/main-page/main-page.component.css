@@ -1,4 +1,4 @@
-.form_plans
+/*.form_plans
 {
     background-color: burlywood;
     padding: 12px;
@@ -9,5 +9,68 @@ input
 {
     padding:10px;
     margin:12px
-}
+}*/
+
+
+body, html {
+    height: 100%;
+    margin: 0;
+    font: 400 15px/1.8 "Lato", sans-serif;
+    color: #777;
+  }
+  
+   .bgimg-2, .bgimg-3 {
+    position: relative;
+    opacity: 0.65;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  
+  }
+ 
+  .bgimg-2 {
+    background-image: url("https://d2slvvdd87p1qe.cloudfront.net/wp-content/uploads/2015/06/82e2ae94-e1434108999196-1050x601.jpg");
+    
+    min-height: 400px;
+  }
+  
+  .bgimg-3 {
+    background-image: url("https://s-i.huffpost.com/gen/1740151/images/o-PERSPECTIVE-facebook.jpg");
+    height: 500px;
+    margin:0;
+    padding:0;
+  }
+  
+  /*.caption {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    color: #000;
+  }
+  
+  .caption span.border {
+    background-color: #111;
+    color: #fff;
+    padding: 18px;
+    font-size: 25px;
+    letter-spacing: 10px;
+  }*/
+  
+  h3 {
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    font: 20px "Lato", sans-serif;
+    color: rgb(117, 212, 54);
+  }
+  
+  /* Turn off parallax scrolling for tablets and phones */
+  @media only screen and (max-device-width: 1024px) {
+       .bgimg-2, .bgimg-3 {
+          background-attachment: scroll;
+      }
+  }
+  
 

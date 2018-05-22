@@ -1,17 +1,27 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import {FormsModule} from '@angular/forms';
+import {FormsModule,ReactiveFormsModule} from '@angular/forms';
 import {CalendarModule} from 'primeng/calendar';
+import { HttpClientModule} from '@angular/common/http';
+import {HttpModule} from '@angular/http';
 
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { MainPageComponent } from './main-page/main-page.component';
 import { FavouriteSpotsComponent } from './favourite-spots/favourite-spots.component';
-import {HttpClientModule} from '@angular/common/http';
-import {RouterModule,Routes} from '@angular/router';
+import { RouterModule,Routes} from '@angular/router';
 import { CalendarDemoComponent } from './calendar-demo/calendar-demo.component';
-
+import { LoginComponent } from './login/login.component';
+import { SignupComponent } from './signup/signup.component';
+import { PlacesComponent } from './places/places.component';
+import {AutoCompleteModule} from 'primeng/autocomplete';
+import { VideoListComponent } from './video-list/video-list.component';
+import { VideoDetailsComponent } from './video-details/video-details.component';
+import { SafePipe } from './safe.pipe';
+import { HotelDetailComponent } from './hotel-detail/hotel-detail.component';
+import { HotelPaymentComponent } from './hotel-payment/hotel-payment.component';
+import { BillingComponent } from './billing/billing.component';
 
 const appRoute:Routes=[
   {
@@ -21,29 +31,24 @@ const appRoute:Routes=[
     path:'home' , component:MainPageComponent
   },
   {
-    path:'Paris',component:FavouriteSpotsComponent
+    path:'login',component:LoginComponent
   },
   {
-    path:'Dubai',component:FavouriteSpotsComponent
+    path:'Signup',component:SignupComponent
   },
   {
-    path:'Singapore',component:FavouriteSpotsComponent
+    path:'videos',component:PlacesComponent
   },
   {
-    path:'Thailand',component:FavouriteSpotsComponent
+    path:'hotelsdetails',component:HotelDetailComponent
   },
   {
-    path:'Greece',component:FavouriteSpotsComponent
+    path:'hotel-payment',component:HotelPaymentComponent
   },
   {
-    path:'Prague',component:FavouriteSpotsComponent
-  },
-  {
-    path:'Manali',component:FavouriteSpotsComponent
-  },
-  {
-    path:'London',component:FavouriteSpotsComponent
+    path:'billing',component:BillingComponent
   }
+
 ]
 
 @NgModule({
@@ -54,13 +59,24 @@ const appRoute:Routes=[
     MainPageComponent,
     FavouriteSpotsComponent,
     CalendarDemoComponent,
+    LoginComponent,
+    SignupComponent,
+    PlacesComponent,
+    VideoListComponent,
+    VideoDetailsComponent,
+    SafePipe,
+    HotelDetailComponent,
+    HotelPaymentComponent,
+    BillingComponent,
   ],
   imports: [
     BrowserModule,
     RouterModule.forRoot(appRoute),
     HttpClientModule,
     CalendarModule,
-    FormsModule
+    FormsModule,
+    ReactiveFormsModule,
+    HttpModule
   ],
   providers: [],
   bootstrap: [AppComponent]

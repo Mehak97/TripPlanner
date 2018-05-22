@@ -1,0 +1,32 @@
+<!--<div class="conatiner">
+    <div class="row">
+        <div class="col-md-8">
+     <h1>{{error}}</h1>
+             <h1>Places Info</h1>
+            <div *ngFor="let place of location">
+                <ul>
+                    <li>{{place.id}}</li>
+                    <li>{{place.location_name}}</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>-->
+<app-header></app-header>
+<div class="container">
+    <div class="row">
+        <div class="col-md-10">
+            <app-video-details *ngIf="selectedVideo" [video]="selectedVideo"></app-video-details>
+        </div>
+        <div class="col-md-2">
+            <app-video-list (SelectVideo)="onSelectVideo($event)" [videos]="videos"></app-video-list>
+        </div>
+    </div>
+</div>
+
+
+<div class="caption">
+    <span class="border" style="background-color:transparent;font-size:25px;color: #f7f7f7;">
+        <a routerLink='/hotelsdetails'>Search for Hotels</a>
+    </span>
+</div>
